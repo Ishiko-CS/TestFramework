@@ -20,20 +20,40 @@
     IN THE SOFTWARE.
 */
 
+using System.Collections.Generic;
+
 namespace Ishiko
 {
     namespace TestFramework
     {
-        public class TestInformation
+        public class TestNumber
         {
-            public TestInformation(TestNumber number, string name)
+            public int Depth()
             {
-                Number = number;
-                Name = name;
+                return m_number.Count;
             }
 
-            public TestNumber Number;
-            public string Name { get; private set; }
+            public int Part(int i)
+            {
+                return m_number[i];
+            }
+
+            public TestNumber Increment()
+            {
+                if (m_number.Count == 0)
+                {
+                    ++m_number[m_number.Count - 1];
+                }
+                return this;
+            }
+
+            public TestNumber DeeperNumber()
+            {
+                m_number.Add(1);
+                return this;
+            }
+
+            private	List<int> m_number = new List<int>();
         }
     }
 }
