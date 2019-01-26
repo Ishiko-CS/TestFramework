@@ -8,6 +8,7 @@ namespace Ishiko
         {
             public TestHarness(string title)
             {
+                m_topSequence = new TopTestSequence(title);
             }
 
             public int run()
@@ -25,7 +26,7 @@ namespace Ishiko
                 return (int)ETestApplicationReturnCodes.eConfigurationProblem;
             }
 
-            private TopTestSequence m_topSequence = new TopTestSequence();
+            private TopTestSequence m_topSequence;
         }
     }
 }

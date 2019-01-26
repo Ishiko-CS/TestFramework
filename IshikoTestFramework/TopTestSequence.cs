@@ -4,6 +4,10 @@
     {
         public class TopTestSequence : TestSequence
         {
+            public TopTestSequence(string name)
+                : base(name)
+            {
+            }
         }
     }
 }

@@ -4,6 +4,10 @@
     {
         public class TestSequence : Test
         {
+            public TestSequence(string name)
+                : base(name)
+            {
+            }
         }
     }
 }
