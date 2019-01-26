@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Xavier Leclercq</Authors>
+    <Company>Needful Software Ltd</Company>
+    <Product>Ishiko/C# - TestFramework</Product>
+    <Description>A test framework for C#.</Description>
+    <Copyright>Xavier Leclercq</Copyright>
+    <PackageLicenseUrl>https://github.com/Ishiko-CS/TestFramework/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Ishiko-CS/TestFramework</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Ishiko-CS/TestFramework</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
   </PropertyGroup>
 
 </Project>
