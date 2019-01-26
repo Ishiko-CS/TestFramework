@@ -4,7 +4,7 @@
     {
         static public void AddTests(Ishiko.TestFramework.TestHarness theTestHarness)
         {
-            Ishiko.TestFramework.TestSequence informationTestSequence = theTestHarness.appendTestSequence("TestInformation tests");
+            Ishiko.TestFramework.TestSequence informationTestSequence = theTestHarness.AppendTestSequence("TestInformation tests");
         }
     }
 }

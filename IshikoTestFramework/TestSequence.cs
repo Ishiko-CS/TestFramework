@@ -14,12 +14,25 @@ namespace Ishiko
             public TestSequence(string name, TestSequence parentSequence)
                 : base(name)
             {
-                parentSequence.append(this);
+                parentSequence.Append(this);
             }
 
-            public void append(Test test)
+            public void Append(Test test)
             {
                 m_tests.Add(test);
+            }
+
+            protected override TestResult.EOutcome DoRun(TestObserver observer)
+            {
+                // By default the outcome is unknown
+                TestResult.EOutcome result = TestResult.EOutcome.eUnknown;
+
+                foreach (Test test in m_tests)
+                {
+                    test.Run(observer);
+                }
+
+                return result;
             }
 
             private List<Test> m_tests = new List<Test>();

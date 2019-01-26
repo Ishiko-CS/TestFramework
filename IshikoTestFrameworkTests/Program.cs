@@ -8,7 +8,7 @@
 
             TestInformationTests.AddTests(theTestHarness);
 
-            return theTestHarness.run();
+            return theTestHarness.Run();
         }
 
     }

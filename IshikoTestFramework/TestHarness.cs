@@ -11,22 +11,22 @@ namespace Ishiko
                 m_topSequence = new TopTestSequence(title);
             }
 
-            public int run()
+            public int Run()
             {
-                Console.WriteLine("Test Suite: " + m_topSequence.name());
+                Console.WriteLine("Test Suite: " + m_topSequence.Name());
 
                 // Run the tests
-                int result = runTests();
+                int result = RunTests();
 
                 return (int)ETestApplicationReturnCodes.eConfigurationProblem;
             }
 
-            public TestSequence appendTestSequence(string name)
+            public TestSequence AppendTestSequence(string name)
             {
                 return new TestSequence(name, m_topSequence);
             }
 
-            private int runTests()
+            private int RunTests()
             {
                 return (int)ETestApplicationReturnCodes.eConfigurationProblem;
             }
