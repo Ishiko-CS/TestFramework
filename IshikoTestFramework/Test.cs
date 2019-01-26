@@ -1,8 +1,9 @@
-﻿using System;
-
-namespace Ishiko
+﻿namespace Ishiko
 {
-    public class Test
+    namespace TestFramework
     {
+        public class Test
+        {
+        }
     }
 }
