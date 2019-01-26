@@ -21,6 +21,11 @@ namespace Ishiko
                 return (int)ETestApplicationReturnCodes.eConfigurationProblem;
             }
 
+            public TestSequence appendTestSequence(string name)
+            {
+                return new TestSequence(name, m_topSequence);
+            }
+
             private int runTests()
             {
                 return (int)ETestApplicationReturnCodes.eConfigurationProblem;
